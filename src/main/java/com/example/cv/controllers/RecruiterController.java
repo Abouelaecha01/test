@@ -23,15 +23,9 @@ public class RecruiterController {
 
     @PreAuthorize("hasRole('ROLE_RECRUITEUR') and hasAuthority('CREATE_OFFER')")
     @PostMapping("/createOffer")
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public ResponseEntity<Offre> goodController(@RequestBody OffreDTO offreDTO, @AuthenticationPrincipal User recruteur) {
-=======
-    public ResponseEntity<Offre> meryameController(@RequestBody OffreDTO offreDTO, @AuthenticationPrincipal User recruteur) {
->>>>>>> feature-X
-=======
+
     public ResponseEntity<Offre> owaisController(@RequestBody OffreDTO offreDTO, @AuthenticationPrincipal User recruteur) {
->>>>>>> feature-X
+        
         // N-call l-service w nsayb l'offre
         Offre createdOffer = recruiterService.createOffer(offreDTO, recruteur);
         return new ResponseEntity<>(createdOffer, HttpStatus.CREATED);
