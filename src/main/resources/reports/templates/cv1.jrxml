@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cv1" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7edd6638-fd36-4c7d-bd69-0f0424750026">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <parameter name="skills" class="java.lang.String"/>
+    <parameter name="experiences" class="java.lang.String"/>
+    <parameter name="formations" class="java.lang.String"/>
+    <parameter name="certificates" class="java.lang.String"/>
+    <parameter name="languages" class="java.lang.String"/>
+    <parameter name="hobbies" class="java.lang.String"/>
+    <parameter name="image" class="java.awt.Image"/>
+    <parameter name="Parameter1" class="java.lang.String"/>
+    <parameter name="IMAGE_PATH_1" class="java.lang.String"/>
+    <parameter name="IMAGE_PATH_2" class="java.lang.String"/>
+    <parameter name="IMAGE_PATH_3" class="java.lang.String"/>
+    <parameter name="IMAGE_PATH_4" class="java.lang.String"/>
+    <field name="prenom" class="java.lang.String"/>
+    <field name="nom" class="java.lang.String"/>
+    <field name="address" class="java.lang.String"/>
+    <field name="tel1" class="java.lang.String"/>
+    <field name="email" class="java.lang.String"/>
+    <field name="profile" class="java.lang.String"/>
+    <detail>
+        <band height="842" splitType="Stretch">
+            <image scaleImage="FillFrame">
+                <reportElement x="0" y="0" width="594" height="842" uuid="d27eb57d-053d-4362-b07c-96cde5928d67"/>
+                <imageExpression><![CDATA[$P{IMAGE_PATH_1}]]></imageExpression>
+            </image>
+            <textField>
+                <reportElement x="333" y="20" width="239" height="90" uuid="27cedce5-d929-463f-9965-48f91994bdab"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="22" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{prenom} + " " + $F{nom}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="40" y="279" width="178" height="30" uuid="82b1e08a-721d-40f3-bb2f-3ad2c84e522a"/>
+                <textElement verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="40" y="249" width="178" height="30" uuid="21c0e4eb-e941-4f96-ab85-190e514e194b"/>
+                <textElement verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{tel1}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="40" y="309" width="178" height="28" uuid="7a96a8ca-4feb-4055-a31e-77761b851adc"/>
+                <textElement verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="22" y="413" width="218" height="87" uuid="a6230d3c-f08c-4256-b448-512e40ca8847"/>
+                <textElement markup="html">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{languages}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="22" y="655" width="191" height="98" uuid="3831bd1d-61ae-4211-a975-f1dd810a8562">
+                    <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                </reportElement>
+                <textElement markup="html">
+                    <font size="10" isItalic="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{hobbies}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="22" y="232" width="150" height="1" uuid="008ac2b8-53f9-4aba-ab7d-fdcd3cca6b37"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="20" y="401" width="150" height="1" uuid="bd2e6e4b-a9ac-40ce-995b-87e5bda34016"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="19" y="644" width="150" height="1" uuid="e9271465-a812-4a35-b04d-5e98fadcc3d2"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <textField>
+                <reportElement x="22" y="202" width="195" height="30" uuid="4d97e6c0-2352-4836-a631-3e02e8940e3b"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{contact.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="20" y="371" width="195" height="30" uuid="487f40a7-bd98-48ce-917b-4d3bbb9ef347"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{languages.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="19" y="614" width="195" height="30" uuid="742d3bf8-7cff-4615-ac76-e5924d8916c7"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{hobbies.title}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="249" y="187" width="300" height="1" uuid="ee7de7d5-58b9-4d56-b125-e806bd12c9a8"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="18" y="533" width="151" height="1" uuid="2f3ce142-1423-4a21-b7e7-229d1ff23d73"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="249" y="306" width="300" height="1" uuid="a72e8f6e-e153-4423-afec-88476e8b40c7"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="250" y="692" width="300" height="1" uuid="c92e58fe-d4cb-46ef-be54-c303894aefd5"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="250" y="503" width="300" height="1" uuid="e13a95a0-e1a2-4762-84ef-2f425a03bcc7"/>
+                <graphicElement>
+                    <pen lineWidth="1.0" lineColor="#080707"/>
+                </graphicElement>
+            </line>
+            <textField>
+                <reportElement x="249" y="157" width="195" height="30" uuid="bfc62e2e-a5c6-40e7-9e90-288e2cf1b093"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{profile.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="18" y="503" width="194" height="30" uuid="77998e0a-9917-4c47-8636-1cb53f2a518a"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{skill.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="249" y="276" width="195" height="30" uuid="d011fbc6-0882-4438-b6e5-49049deb3bb8"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{experience.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="473" width="195" height="30" uuid="97a86f6f-4744-4b22-ac41-86307a6003e6"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{education.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="662" width="195" height="30" uuid="6adc2ab1-fbae-49cc-9380-34e8c95694c9"/>
+                <textElement>
+                    <font fontName="Archivo Black" size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$R{certifications.title}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="197" width="321" height="46" uuid="0de556c5-3e8c-4618-83db-41c23716fceb"/>
+                <textFieldExpression><![CDATA[$F{profile}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="19" y="543" width="199" height="50" uuid="d7311a7b-8d4b-4ca4-a7c8-996f9188560d"/>
+                <textElement markup="html"/>
+                <textFieldExpression><![CDATA[$P{skills}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="249" y="316" width="323" height="134" uuid="e756d99f-52c5-4d40-b839-fa886ad0961e"/>
+                <textElement markup="html"/>
+                <textFieldExpression><![CDATA[$P{experiences}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="249" y="512" width="323" height="133" uuid="aee04f92-3624-47d1-9267-103c338f042e"/>
+                <textElement markup="html"/>
+                <textFieldExpression><![CDATA[$P{formations}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="703" width="298" height="81" uuid="52ad665e-6c88-4d7a-86a0-9fb9801e8b73"/>
+                <textElement markup="html"/>
+                <textFieldExpression><![CDATA[$P{certificates}]]></textFieldExpression>
+            </textField>
+            <image scaleImage="FillFrame">
+                <reportElement x="15" y="257" width="15" height="15" uuid="eeafeff9-6eb8-4547-af89-3cb2c2edaa43">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <imageExpression><![CDATA[$P{IMAGE_PATH_4}]]></imageExpression>
+            </image>
+            <image scaleImage="FillFrame">
+                <reportElement x="14" y="285" width="15" height="20" uuid="71672bac-56fc-42d1-851d-83bd9d7f4f02">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <imageExpression><![CDATA[$P{IMAGE_PATH_3}]]></imageExpression>
+            </image>
+            <image scaleImage="FillFrame">
+                <reportElement x="15" y="319" width="15" height="10" uuid="9184572e-76a7-42cc-82b8-683efcd54ccf">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <imageExpression><![CDATA[$P{IMAGE_PATH_2}]]></imageExpression>
+            </image>
+            <image scaleImage="FillFrame">
+                <reportElement x="56" y="37" width="140" height="132" uuid="99c51673-c73a-498a-b04f-2b3fa8296a64"/>
+                <imageExpression><![CDATA[$P{image}]]></imageExpression>
+            </image>
+        </band>
+    </detail>
+</jasperReport>
