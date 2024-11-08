@@ -1,0 +1,38 @@
+cahier de charge
+
+
+achno had application khassha dir
+
+
+khass user y t incscription
+connection
+khass user y dir creer un nouveau cv
+khass user y dakhal informations dyal cv dyalo
+ykhtar template
+hdakchi kamal ghadi ytsifat l backend bach ydkhol f database
+
+
+controller: 
+    -> post { informations dyal cv + template }
+    -> bghit nsajal f database
+    -> achmen service ? o achmen method dyal service khassni nkhadam?
+    -> ah 3raft ghadi nkhadam CvService createCv
+    ...... sala 
+
+
+service:
+    -> ana jani chi informations men 3and controller
+    -> ghadi n3ayat 3la repository bach ndakhal hadchi f database
+
+repository madakhlch fih logique dyal application
+service -> logique dyal application dakhal
+
+
+
+!!!!!!!!!!!!!!!! IMPORTANT 
+// galik adil khassek 5 services
+// 1 bach tsajal les infos personneles 
+// 2 bach tsajl experiences
+// 3 bach tsajal skills
+// 4 bach tsajal formations
+// 5 bach tsajal certificates
